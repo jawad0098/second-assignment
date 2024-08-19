@@ -1,0 +1,74 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+.redf {
+  text-align: center;
+}
+button.hovew:hover{
+color: #e9eef5 !important;
+background-color: #080520 !important;
+transition: 0.5s;
+}
+
+nav.head a {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+nav.head {
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 100px;
+  column-gap: 0;
+  
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns on small screens */
+  }
+}
